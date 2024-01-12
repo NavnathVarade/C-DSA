@@ -25,6 +25,7 @@ int main()
         printf("\n%d is not found in the array.\n", num);
     else
         printf("\n%d is found at location %d in the array\n", num, i + 1);
+        
     return 0;
 }
 
