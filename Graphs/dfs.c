@@ -16,9 +16,14 @@ void main()
 	// read the adjecency matrix
 	printf("\nEnter adjecency matrix of the graph:\n");
 	for (i = 1; i <= n; i++)
+	{
 		for (j = 1; j <= n; j++)
+		{
+			printf("Enter value for row %d, column %d: ", i, j);
 			scanf("%d", &G[i][j]);
-			
+		}
+	}
+
 	// visited is initialized to zero
 	for (i = 1; i <= n; i++)
 		visited[i] = 0;
