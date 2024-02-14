@@ -77,14 +77,21 @@ int main()
     {
         visited[i] = 0;
     }
-    printf("Enter graph data in matrix form:    \n");
+
+    printf("Enter graph data in matrix form:\n");
     for (i = 1; i <= n; i++)
+    {
         for (j = 1; j <= n; j++)
+        {
+            printf("Enter value for row %d, column %d: ", i, j);
             scanf("%d", &a[i][j]);
+        }
+    }
+
     printf("Enter the starting vertex: ");
     scanf("%d", &v);
 
-    printf("\nBFS is : ");
+    printf("\n(Breadth-first search) BFS is : ");
     printf("%d ", v);
     enqueue(&q, v);
     while (!isEmpty(&q))
@@ -101,6 +108,6 @@ int main()
             }
         }
     }
-    
+
     return 0;
 }
