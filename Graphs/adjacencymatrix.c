@@ -41,12 +41,12 @@ int dir_graph()
 	{
 		for (j = 0; j < n; j++)
 		{
-			printf("\nIs the edge present between %d & %d(1,0)", i + 1, j + 1);
+			printf("\nIs the edge present between %d & %d(1,0) : ", i + 1, j + 1);
 			scanf("%d", &adj_mat[i][j]);
 		}
 	}
 
-	printf("\nAdjacency matrix is:\n");
+	printf("\nAdjacency matrix Of Directed Graph is:\n");
 	for (i = 0; i < n; i++)
 	{
 		for (j = 0; j < n; j++)
@@ -69,12 +69,12 @@ int undir_graph()
 		for (j = 0; j < n; j++)
 		{
 
-			printf("\nIs the edge present between %d & %d(1,0)", i + 1, j + 1);
+			printf("\nIs the edge present between %d & %d(1,0) : ", i + 1, j + 1);
 			scanf("%d", &adj_mat[i][j]);
 		}
 	}
 
-	printf("\nAdjacency matrix is:\n");
+	printf("\nAdjacency matrix Of Un-Directed Graph is:\n");
 	for (i = 0; i < n; i++)
 	{
 		for (j = 0; j < n; j++)
@@ -83,6 +83,6 @@ int undir_graph()
 		}
 		printf("\n");
 	}
-	
+
 	return 0;
 }
